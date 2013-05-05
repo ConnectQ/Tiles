@@ -17,41 +17,37 @@ hr {
     width: 100%;
     padding: 0; 
     margin: 0px 0;
-
 }
 #tile-section{
-	min-height: 724px;
 	width: 625px;
 	margin: auto;
+	min-height: 724px;
 }
 #tile-one {
-	display: block;
-	position: relative;
 	top: 40px;
 	float: left;
+	position: fixed;
 	background-repeat: no-repeat;
 	background-image: url(http://i.imgur.com/76v7fpS.png);
 }
 #tile-two {
-	display: block;
-	position: relative;
 	top: 250px;
 	float: left;
+	position: relative;
 	background-repeat: no-repeat;
 	background-image: url(http://i.imgur.com/6KnVt2T.png);
 }
 #tile-three {
-	display: block;
-	position: relative;
 	top: 80px;
 	float: left;
+	position: relative;
 	background-repeat: no-repeat;
 	background-image: url(http://i.imgur.com/MOkxIYw.png);
 }
 #tile-four {
-	position: relative;
 	top: 160px;
 	float: left;
+	position: relative;
 	background-repeat: no-repeat;
 	background-image: url(http://i.imgur.com/8039qLR.png);
 }
