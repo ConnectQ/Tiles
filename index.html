@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang='en'>
+  <head>
+    <title>
+      Rob's Project
+    </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" media="screen" href="css/bootstrap.css">
+  </head>
+  <body>
+    <hr>
+
+    <section id="tile-section">
+      <div class="popover-markup">
+        <a id="tile-one" class="trig" data-class="Tile1Popover" data-toggle="popover" data-placement="bottom" style="width: 175px;height: 400px;"></a>
+        <div class="head hide">How to make it</div>
+        <div class="content hide">
+          <div id="myCarousel" class="carousel slide">
+            <ol class="carousel-indicators">
+              <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+              <li data-target="#myCarousel" data-slide-to="1"></li>
+              <li data-target="#myCarousel" data-slide-to="2"></li>
+            </ol>
+            <!-- Carousel items -->
+            <div class="carousel-inner">
+              <div class="active item">
+                <img src="http://twitter.github.io/bootstrap/assets/img/bootstrap-mdo-sfmoma-01.jpg" alt="">
+              </div>
+              <div class="item">
+                <img src="http://twitter.github.io/bootstrap/assets/img/bootstrap-mdo-sfmoma-02.jpg" alt="">
+              </div>
+              <div class="item">
+                <img src="http://twitter.github.io/bootstrap/assets/img/bootstrap-mdo-sfmoma-03.jpg" alt="">
+              </div>
+            </div>
+            <!-- Carousel nav -->
+            <a class="carousel-control left" href="#myCarousel" data-slide="prev">&lsaquo;</a>
+            <a class="carousel-control right" href="#myCarousel" data-slide="next">&rsaquo;</a>
+          </div>
+        </div>
+      </div>
+      
+      <div class="popover-markup">
+        <a id="tile-two" class="trig" data-class="Tile2Popover" data-toggle="popover" data-placement="top" style="width: 125px;height: 400px;">
+        </a>
+        <div class="head hide">Automata</div>
+        <div class="content hide">
+          <iframe width="425" height="250" src="http://www.youtube.com/embed/bmmVLvyD1ME" frameborder="0" allowfullscreen></iframe>
+        </div>
+      </div>
+
+      <a id="tile-three" data-class="Tile3Popover" data-toggle="popover" data-placement="bottom" title="" data-content="And here's some amazing content. It's very engaging. right?" data-original-title="A Title" style="width: 175px;height: 450px;">
+      </a>
+      <a id="tile-four" data-class="Tile4Popover" data-toggle="popover" data-placement="bottom" title="" data-content="And here's some amazing content. It's very engaging. right?" data-original-title="A Title" style="width: 150px;height: 300px;">
+      </a>
+    </section>
+
+    <div id="title">
+      The quick brown fox jumps over the lazy dog.
+    </div>
+
+    <nav>
+      <ul id="nav">
+        <li><a href="#">Reddit</a></li>
+        <li><a href="#">Like</a></li>
+        <li><a href="#">Contact Us</a></li>
+        <li><a href="#" style="margin-left:25px;margin-right:25px;font-weight: bold;">Home</a></li>
+        <li><a href="#">Forum</a></li>
+        <li><a href="#">Tweet</a></li>
+        <li><a href="#">Google+</a></li>
+      </ul>
+    </nav>
+
+    <script src="http://code.jquery.com/jquery.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script>  
+    $(function (){
+      $('.popover-markup>.trig').popover({
+          html : true,
+          title: function() {
+            return $(this).parent().find('.head').html();
+          },
+          content: function() {
+            return $(this).parent().find('.content').html();
+          }
+      });
+      $("#tile-one").popover();
+      $("#tile-two").popover();
+      $("#tile-three").popover();
+      $("#tile-four").popover();
+
+      $('#tile-one').popover({
+        content: function(ele) {
+        return $('#popover-content').html(); 
+      }
+      });
+
+    });  
+    </script> 
+
+  </body>
+</html>
