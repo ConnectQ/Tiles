@@ -1,81 +1,223 @@
-<!doctype html>
+<!DOCTYPE html>
+
 <html lang='en'>
-  <head>
-    <title>
-      Rob's Project
-    </title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <link rel="stylesheet" type="text/css" href="css/style.css">
-    <link rel="stylesheet" media="screen" href="css/bootstrap.css">
-  </head>
-  <body>
+<head>
+    <title>Rob's Project</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <link href="css/bootstrap.css" media="screen" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Noto+Serif' rel=
+    'stylesheet' type='text/css'>
+</head>
+
+<body>
     <hr>
 
     <div id="tile-section">
-      <div class="popover-markup">
-        <a id="tile-one" class="trig" data-class="Tile1Popover" data-toggle="popover" data-placement="bottom" style="width: 175px;height: 400px;"></a>
-        <div class="head hide">How to make it</div>
-        <div class="content hide">
-          <div id="myCarousel" class="carousel slide">
-            <ol class="carousel-indicators">
-              <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-              <li data-target="#myCarousel" data-slide-to="1"></li>
-              <li data-target="#myCarousel" data-slide-to="2"></li>
-            </ol>
-            <!-- Carousel items -->
-            <div class="carousel-inner">
-              <div class="active item">
-                <img src="http://twitter.github.io/bootstrap/assets/img/bootstrap-mdo-sfmoma-01.jpg" alt="">
-              </div>
-              <div class="item">
-                <img src="http://twitter.github.io/bootstrap/assets/img/bootstrap-mdo-sfmoma-02.jpg" alt="">
-              </div>
-              <div class="item">
-                <img src="http://twitter.github.io/bootstrap/assets/img/bootstrap-mdo-sfmoma-03.jpg" alt="">
-              </div>
+        <div class="popover-markup">
+            <a class="trig" data-class="popover-one" data-placement="bottom"
+            data-toggle="popover" id="tile-one" style=
+            "width: 175px;height: 400px;"></a>
+
+            <div class="head hide">
+                How to make it
             </div>
-            <!-- Carousel nav -->
-            <a class="carousel-control left" href="#myCarousel" data-slide="prev">&lsaquo;</a>
-            <a class="carousel-control right" href="#myCarousel" data-slide="next">&rsaquo;</a>
-          </div>
-        </div>
-      </div>
-      
-      <div class="popover-markup">
-        <a id="tile-two" class="trig" data-class="Tile2Popover" data-toggle="popover" data-placement="top" style="width: 125px;height: 400px;">
-        </a>
-        <div class="head hide">Automata</div>
-        <div class="content hide">
-          <iframe width="425" height="250" src="http://www.youtube.com/embed/bmmVLvyD1ME" frameborder="0" allowfullscreen></iframe>
-        </div>
-      </div>
 
-      <a id="tile-three" data-class="Tile3Popover" data-toggle="popover" data-placement="bottom" title="" data-content="And here's some amazing content. It's very engaging. right?" data-original-title="A Title" style="width: 175px;height: 450px;">
-      </a>
-      <a id="tile-four" data-class="Tile4Popover" data-toggle="popover" data-placement="bottom" title="" data-content="And here's some amazing content. It's very engaging. right?" data-original-title="A Title" style="width: 150px;height: 300px;">
-      </a>
+            <div class="content hide">
+                <div class="carousel slide" id="myCarousel">
+                    <ol class="carousel-indicators">
+                        <li class="active" data-slide-to="0" data-target=
+                        "#myCarousel"></li>
+
+                        <li data-slide-to="1" data-target="#myCarousel"></li>
+
+                        <li data-slide-to="2" data-target="#myCarousel"></li>
+                    </ol><!-- Carousel items -->
+
+                    <div class="carousel-inner">
+                        <div class="active item">
+                            <img alt="" src=
+                            "http://twitter.github.io/bootstrap/assets/img/bootstrap-mdo-sfmoma-01.jpg">
+
+                            <div class="carousel-caption">
+                                <h5>First Thumbnail label</h5>
+
+                                <p>Cras justo odio, dapibus ac facilisis in,
+                                egestas eget quam. Donec id elit non mi porta
+                                gravida at eget metus. Nullam id dolor id nibh
+                                ultricies vehicula ut id elit.</p>
+                            </div>
+                        </div>
+
+                        <div class="item">
+                            <img alt="" src=
+                            "http://twitter.github.io/bootstrap/assets/img/bootstrap-mdo-sfmoma-02.jpg">
+
+                            <div class="carousel-caption">
+                                <h5>Second Thumbnail label</h5>
+
+                                <p>Cras justo odio, dapibus ac facilisis in,
+                                egestas eget quam. Donec id elit non mi porta
+                                gravida at eget metus. Nullam id dolor id nibh
+                                ultricies vehicula ut id elit.</p>
+                            </div>
+                        </div>
+
+                        <div class="item">
+                            <img alt="" src=
+                            "http://twitter.github.io/bootstrap/assets/img/bootstrap-mdo-sfmoma-03.jpg">
+
+                            <div class="carousel-caption">
+                                <h5>Third Thumbnail label</h5>
+
+                                <p>Cras justo odio, dapibus ac facilisis in,
+                                egestas eget quam. Donec id elit non mi porta
+                                gravida at eget metus. Nullam id dolor id nibh
+                                ultricies vehicula ut id elit.</p>
+                            </div>
+                        </div>
+                    </div><!-- Carousel nav -->
+                    <a class="carousel-control left" data-slide="prev" href=
+                    "#myCarousel">‹</a> <a class="carousel-control right"
+                    data-slide="next" href="#myCarousel">›</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="popover-markup">
+            <a class="trig" data-class="popover-two" data-placement="top"
+            data-toggle="popover" id="tile-two" style=
+            "width: 125px;height: 400px;"></a>
+
+            <div class="head hide">
+                Automata
+            </div>
+
+            <div class="content hide">
+                <iframe frameborder="0" height="265" src=
+                "http://www.youtube.com/embed/bmmVLvyD1ME" width=
+                "450"></iframe>
+            </div>
+        </div>
+
+        <div class="popover-markup">
+            <a class="trig" data-class="popover-three" data-placement="bottom"
+            data-toggle="popover" id="tile-three" style=
+            "width: 175px;height: 450px;"></a>
+
+            <div class="head hide">
+                The volume of unaddressed junk mail
+            </div>
+
+            <div class="content hide">
+                <p style="padding:8px">Under a 'voluntary producer
+                responsibility agreement' with Defra the junk mail industry is
+                committed to reducing waste. The agreement, which dates back to
+                2003, has so far mainly focussed on increasing recycling rates
+                for junk mail. In 2003 only 13% of junk mail was recycled, and
+                so it was agreed to set recycling targets:</p>
+
+                <ul>
+                    <li>30% by the end of 2005;</li>
+
+                    <li>55% by the end of 2009;</li>
+
+                    <li>and 70% by the end of 2013.</li>
+                </ul><a href="http://www.stopjunkmail.org.uk" style=
+                "padding-top:50px;float:left; display:inline-block;" target=
+                "_blank">Source: StopJunkMail.org.uk</a> <a href=
+                "http://www.stopjunkmail.org.uk/facts/volume.php" style=
+                "padding-top:50px;float:right;display:inline-block;" target=
+                "_blank">Read more...</a>
+            </div>
+        </div>
+
+        <div class="popover-markup">
+            <a class="trig" data-class="popover-four" data-placement="bottom"
+            data-toggle="popover" id="tile-four" style=
+            "width: 150px;height: 300px;"></a>
+
+            <div class="content hide">
+                <a href="http://www.craftster.org">
+                <div class="tile-small" style=
+                "border: 1px solid #000;background-image:url('http://i.imgur.com/12ULfl0.png');">
+                </div></a> <a href="http://myhandboundbooks.blogspot.com">
+                <div class="tile-small" style=
+                "margin-left: 151px;border: 1px solid #000;background-image:url('http://i.imgur.com/C8C5Lxo.png');">
+                </div></a> <a href="http://patpitingolo.blogspot.com">
+                <div class="tile-small" style=
+                "margin-left: 302px;border: 1px solid #000;background-image:url('http://i.imgur.com/VGjjIJU.png');">
+                </div></a> <a href="http://craftingagreenworld.com">
+                <div class="tile-small" style=
+                "margin-top:101px;px;border: 1px solid #000;background-image:url('http://i.imgur.com/M8y5fYv.png');">
+                </div></a> <a href="http://maizehutton.blogspot.com">
+                <div class="tile-small" style=
+                "margin-top:101px;margin-left: 151px;border: 1px solid #000;background-image:url('http://i.imgur.com/0cLIqXV.png');">
+                </div></a> <a href=
+                "http://thisrecycledlife.wordpress.com/2008/10/13/the-top-ten/">
+                <div class="tile-small" style=
+                "margin-top:101px;margin-left: 302px;border: 1px solid #000;background-image:url('http://i.imgur.com/fwPtOkp.png');">
+                </div></a> <a href="http://craftingagreenworld.com">
+                <div class="tile-small" style=
+                "margin-top:202px;px;border: 1px solid #000;background-image:url('http://i.imgur.com/sLqcL5x.png');">
+                </div></a> <a href="http://maizehutton.blogspot.com">
+                <div class="tile-small" style=
+                "margin-top:202px;margin-left: 151px;border: 1px solid #000;background-image:url('http://i.imgur.com/DPO7mkH.png');">
+                </div></a> <a href=
+                "http://thisrecycledlife.wordpress.com/2008/10/13/the-top-ten/">
+                <div class="tile-small" style=
+                "margin-top:202px;margin-left: 302px;border: 1px solid #000;background-image:url('http://i.imgur.com/ucLm9dL.png');">
+                </div></a>
+            </div>
+        </div>
     </div>
 
-    <div id="title">
-      The quick brown fox jumps over the lazy dog.
-    </div>
+    <footer id="title">
+        <p>Prat.</p>
+    </footer>
 
     <nav>
-      <ul id="nav">
-        <li><a href="#">Reddit</a></li>
-        <li><a href="#">Like</a></li>
-        <li><a href="#">Contact Us</a></li>
-        <li><a href="#" style="margin-left:25px;margin-right:25px;font-weight: bold;">Home</a></li>
-        <li><a href="#">Forum</a></li>
-        <li><a href="#">Tweet</a></li>
-        <li><a href="#">Google+</a></li>
-      </ul>
-    </nav>
+        <ul id="nav">
+            <li style="float:left;">
+                <a href="#">Github</a>
+            </li>
 
-    <script src="http://code.jquery.com/jquery.js"></script>
-    <script src="js/bootstrap.js"></script>
-    <script>  
+            <li>
+                <a href="#">Reddit</a>
+            </li>
+
+            <li>
+                <a href="#">Like</a>
+            </li>
+
+            <li>
+                <a href="#">Contact Us</a>
+            </li>
+
+            <li>
+                <a href="#" style=
+                "margin-left:25px;margin-right:25px;font-weight: bold;">Home</a>
+            </li>
+
+            <li>
+                <a href="#">Forum</a>
+            </li>
+
+            <li>
+                <a href="#">Tweet</a>
+            </li>
+
+            <li>
+                <a href="#">Google+</a>
+            </li>
+
+            <li style="float:right; border-left: 1px solid black;">
+                <a href="">Download designs</a>
+            </li>
+        </ul>
+    </nav><script src="http://code.jquery.com/jquery.js"></script> <script src="js/bootstrap.js"></script> <script>
+
     $(function (){
       $('.popover-markup>.trig').popover({
           html : true,
@@ -91,7 +233,6 @@
       $("#tile-three").popover();
       $("#tile-four").popover();
     });  
-    </script> 
-
-  </body>
+    </script>
+</body>
 </html>
